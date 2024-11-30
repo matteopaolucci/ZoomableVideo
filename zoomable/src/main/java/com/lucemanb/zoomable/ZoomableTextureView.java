@@ -35,7 +35,7 @@ public class ZoomableTextureView extends TextureView {
     public void setMaxScale(float scale) {
         if (scale < 1.0f || scale < minScale)
             throw new RuntimeException("maxScale can't be lower than 1 or minScale(" + minScale + ")");
-        else minScale = scale;
+        else maxScale = scale;
     }
 
     private static final int NONE = 0;
